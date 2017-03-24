@@ -69,7 +69,7 @@ features ## shows features data.frame
         avgdata <- avgdata[order(avgdata$subject, avgdata$activity),]
         avgdatadf<-tbl_df(avgdata)##I like to explore with tbl_df
         
-##write a text table
+##write a text table called "avgdata.txt" as part of final requirement
         write.table(avgdata, "avgdata.txt", row.name=FALSE)    
         
         
